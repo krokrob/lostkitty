@@ -1,0 +1,22 @@
+<h1>Lost Kitty</h1>
+
+<%= link_to 'Report a lost kitty', new_pet_path %>
+<h2>Found pets</h2>
+<ul>
+  <% @found_pets.each do |pet| %>
+    <li>
+      <%= pet.breed  %>
+      <%= link_to 'delete', pet_path(pet), method: :delete, data: { confirm: 'Are you sure?' } %>
+    </li>
+  <% end %>
+</ul>
+
+<h2>Lost pets</h2>
+<ul>
+  <% @lost_pets.each do |pet| %>
+    <li>
+      <%= pet.breed  %>
+      <%= link_to 'details', pet_path(pet) %>
+    </li>
+  <% end %>
+</ul>

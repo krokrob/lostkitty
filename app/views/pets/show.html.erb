@@ -1,0 +1,7 @@
+<h1><%= @pet.breed %></h1>
+<p>
+  found on <%= @pet.date_found %>
+  <%= link_to 'owner found', edit_pet_path(@pet) %>
+</p>
+<%= link_to 'back to lost kitties', pets_path %>
+

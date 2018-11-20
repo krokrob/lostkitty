@@ -1,0 +1,7 @@
+<h1>Pets#edit</h1>
+
+<%= form_for @pet do |f|%>
+  <%= f.label :found_by_owner %>
+  <%= f.check_box :found_by_owner %>
+  <%= f.submit %>
+<% end %>

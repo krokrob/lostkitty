@@ -1,0 +1,10 @@
+<h1>Pets#new</h1>
+
+<%= form_for @pet do |f|%>
+  <%= f.label :breed  %>
+  <%= f.text_field :breed %>
+  <%= f.label :date_found %>
+  <%= f.date_field :date_found %>
+  <%= f.submit %>
+<% end %>
+
